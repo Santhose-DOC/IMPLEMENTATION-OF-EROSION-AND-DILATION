@@ -52,7 +52,8 @@ Compare the original, eroded, and dilated images.
 ```python
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt<img width="389" height="410" alt="download" src="https://github.com/user-attachments/assets/1d8a8dfc-9486-4da9-95ed-6e2efcfbc229" />
+
 
 # Step 2: Create a blank image
 image = np.zeros((500, 500, 3), dtype=np.uint8)
@@ -100,13 +101,22 @@ plt.show()
 * A black canvas (`500 x 500`) containing white text (`SANTHOSE AROCKIRAJ J`) is displayed.
 * Serves as the baseline input for morphological processing.
 
+<img width="389" height="410" alt="download" src="https://github.com/user-attachments/assets/eea7af28-7c74-4744-8565-6eb992067260" />
+
+
 ### Erosion
 * The eroded image is displayed after applying a `3 x 3` kernel for 1 iteration.
 * The stroke thickness of the characters is noticeably reduced as foreground boundaries shrink inward.
 
+<img width="389" height="410" alt="download" src="https://github.com/user-attachments/assets/b644c640-327f-4e4b-8c4c-488a2db78a74" />
+
+
 ### Dilation
 * The dilated image is displayed after applying a `3 x 3` kernel for 1 iteration.
 * The stroke thickness of the characters increases and looks bolder as foreground boundaries expand outward.
+
+<img width="389" height="410" alt="download" src="https://github.com/user-attachments/assets/a968e140-7f5a-4a84-b30e-625796a0e66e" />
+
 
 ## Result
 
